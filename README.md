@@ -43,25 +43,87 @@ A simple and responsive tool to control LED and haptic feedback on the Flipper Z
 
 ---
 
-## Installation
+## Installation (Windows 11)
 
-Build the app:
-bash
-```python -m ufbt```
-Copy the .fap file to:
+Follow these steps to build and install the app on your Flipper Zero.
 
+---
+
+### 1. Install Python
+
+1. Download Python from:
+   https://www.python.org/downloads/windows/
+
+2. Run the installer
+
+3. IMPORTANT:
+   ✔ Check **"Add Python to PATH"**
+   ✔ Click **Install Now**
+
+4. After installation, open Command Prompt and check:
+
+   ```bash
+   python --version
+
+   You should see a version like:
+
+Python 3.x.x
+2. Install uFBT (Flipper build tool)
+
+In Command Prompt, run:
+
+pip install --upgrade ufbt
+
+If you get a PATH warning, you can still continue.
+
+3. Download this project
+
+Either:
+
+Download ZIP from GitHub and extract it
+or
+Clone it:
+git clone https://github.com/YOURNAME/device-control-flipper.git
+4. Open the project folder
+
+Example:
+
+cd Desktop\device_control
+
+(Use your actual folder path if different)
+
+5. Build the app
+
+Run:
+
+python -m ufbt
+
+If successful, you will get:
+
+```dist\device_control.fap```
+6. Copy to Flipper Zero
+Connect your Flipper via USB
+Open the SD card (via qFlipper, file explorer or [Flipper Lab](https://lab.flipper.net/))
+Go to:
 /ext/apps/Tools/
+Copy:
+```device_control.fap```
+7. Run the app
 
-Run it on your Flipper Zero.
+On your Flipper:
 
-Project Structure
-device_control/
-├── device_control.c
-├── application.fam
-├── icon.png
-└── README.md
-Notes
-Built using Flipper Zero SDK (ufbt)
-Focused on responsiveness and simplicity
+Apps → Tools → Device Control
 
-# Author: CowboyHatVR
+# Troubleshooting
+"python not recognized"
+Reinstall Python
+Make sure "Add to PATH" is checked [x]
+"ufbt not found"
+
+### Run:
+
+```python -m ufbt```
+
+## Build errors:
+Make sure you're inside the project folder
+Check that ```device_control.c```and ```application.fam``` exist
