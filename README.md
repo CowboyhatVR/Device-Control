@@ -54,11 +54,17 @@ Follow these steps to build and install the app on your Flipper Zero.
 1. Download Python from:
    [Official Python Website](https://www.python.org/downloads/windows/)
 
+---
+
 2. Run the installer
+
+---
 
 3. IMPORTANT:
    ✔ Check **"Add Python to PATH"**
    ✔ Click **Install Now**
+
+---
 
 4. After installation, open Command Prompt and check:
    
@@ -67,18 +73,24 @@ You should see a version like:
 
 Python 3.x.x (x = your version of python, any version in 3 will work)
 
-2. Install uFBT (Flipper build tool)
+---
+
+5. Install uFBT (Flipper build tool)
 
 In Command Prompt, run:
 
 ```pip install --upgrade ufbt```
 If you get a PATH warning, you can still continue.
 
-3. Download this project
+---
+
+6. Download this project
 
 Download the ZIP from this project in GitHub and extract it
 
-4. Open the project folder
+---
+
+7. Open the project folder
 
 Example:
 
@@ -86,12 +98,14 @@ Example:
 
 (Use your actual folder path if different)
 
-# Change your code if you want in the device_control.c file, the application.fam is for perefences
+## Change your code if you want in the device_control.c file, the application.fam is for perefences
 ### if you want an icon, it has to be 10 x 10 pixels, and needs to be named :
 ```icon.png``` you also need to add ```fap_icon="icon.png",``` under the ```fap_category="Tools",``` in the   
 ```application.fam``` in you folder.
 
-5. Build the app
+---
+
+8. Build the app
 
 Run:
 
@@ -101,7 +115,9 @@ If successful, you will get:
 
 ```dist\device_control.fap```
 
-6. Copy to Flipper Zero:
+---
+
+9. Copy to Flipper Zero:
 
 Connect your Flipper via USB
 
@@ -113,7 +129,9 @@ Go to:
 Copy:
 ```device_control.fap``` into ```tools```
 
-7. Run the app
+---
+
+10. Run the app
 
 On your Flipper:
 
@@ -125,7 +143,7 @@ Apps → Tools → Device Control
 # Troubleshooting
 "python not recognized"
 Reinstall Python
-Make sure "Add to PATH" is checked [x]
+Make sure "Add to PATH" is checked
 "ufbt not found"
 
 ### Run:
