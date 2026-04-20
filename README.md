@@ -46,9 +46,8 @@ A simple and responsive tool to control LED and haptic feedback on the Flipper Z
 ## Installation
 
 Build the app:
-```bash
-python -m ufbt
-
+bash
+```python -m ufbt```
 Copy the .fap file to:
 
 /ext/apps/Tools/
@@ -64,6 +63,5 @@ device_control/
 Notes
 Built using Flipper Zero SDK (ufbt)
 Focused on responsiveness and simplicity
-Author
 
-CowboyHatVR
+# Author: CowboyHatVR
