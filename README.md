@@ -65,7 +65,8 @@ Follow these steps to build and install the app on your Flipper Zero.
    ```python --version```
 You should see a version like:
 
-Python 3.x.x (x = your version of python, any versiom in 3 will work)
+Python 3.x.x (x = your version of python, any version in 3 will work)
+
 2. Install uFBT (Flipper build tool)
 
 In Command Prompt, run:
@@ -86,6 +87,9 @@ Example:
 (Use your actual folder path if different)
 
 # Change your code if you want in the device_control.c file, the application.fam is for perefences
+### if you want an icon, it has to be 10 x 10 pixels, and needs to be named :
+```icon.png``` you also need to add ```fap_icon="icon.png",``` under the ```fap_category="Tools",``` in the   
+```application.fam``` in you folder.
 
 5. Build the app
 
@@ -96,6 +100,7 @@ Run:
 If successful, you will get:
 
 ```dist\device_control.fap```
+
 6. Copy to Flipper Zero:
 
 Connect your Flipper via USB
@@ -104,8 +109,10 @@ Open the SD card (via qFlipper, file explorer or [Flipper Lab](https://lab.flipp
 
 Go to:
 ```ext/apps/Tools/```
+
 Copy:
 ```device_control.fap``` into ```tools```
+
 7. Run the app
 
 On your Flipper:
