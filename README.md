@@ -70,8 +70,7 @@ Python 3.x.x (x = your version of python, any versiom in 3 will work)
 
 In Command Prompt, run:
 
-pip install --upgrade ufbt
-
+```pip install --upgrade ufbt```
 If you get a PATH warning, you can still continue.
 
 3. Download this project
@@ -86,7 +85,7 @@ Example:
 
 (Use your actual folder path if different)
 
-# Change your code if you want in the .c file, the application.fam is for perefences
+# Change your code if you want in the device_control.c file, the application.fam is for perefences
 
 5. Build the app
 
