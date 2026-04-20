@@ -52,7 +52,7 @@ Follow these steps to build and install the app on your Flipper Zero.
 ### 1. Install Python
 
 1. Download Python from:
-   https://www.python.org/downloads/windows/
+   [Official Python Website](https://www.python.org/downloads/windows/)
 
 2. Run the installer
 
@@ -61,13 +61,11 @@ Follow these steps to build and install the app on your Flipper Zero.
    ✔ Click **Install Now**
 
 4. After installation, open Command Prompt and check:
+   
+   ```python --version```
+You should see a version like:
 
-   ```bash
-   python --version
-
-   You should see a version like:
-
-Python 3.x.x
+Python 3.x.x (x = your version of python, any versiom in 3 will work)
 2. Install uFBT (Flipper build tool)
 
 In Command Prompt, run:
@@ -78,41 +76,45 @@ If you get a PATH warning, you can still continue.
 
 3. Download this project
 
-Either:
+Download the ZIP from this project in GitHub and extract it
 
-Download ZIP from GitHub and extract it
-or
-Clone it:
-git clone https://github.com/YOURNAME/device-control-flipper.git
 4. Open the project folder
 
 Example:
 
-cd Desktop\device_control
+```cd Desktop\device_control```
 
 (Use your actual folder path if different)
+
+# Change your code if you want in the .c file, the application.fam is for perefences
 
 5. Build the app
 
 Run:
 
-python -m ufbt
+```python -m ufbt```
 
 If successful, you will get:
 
 ```dist\device_control.fap```
-6. Copy to Flipper Zero
+6. Copy to Flipper Zero:
+
 Connect your Flipper via USB
+
 Open the SD card (via qFlipper, file explorer or [Flipper Lab](https://lab.flipper.net/))
+
 Go to:
-/ext/apps/Tools/
+```ext/apps/Tools/```
 Copy:
-```device_control.fap```
+```device_control.fap``` into ```tools```
 7. Run the app
 
 On your Flipper:
 
 Apps → Tools → Device Control
+
+# And your done !!!!
+## hope you enjoy.
 
 # Troubleshooting
 "python not recognized"
